@@ -27,7 +27,7 @@ Rename 'terraform.tfvars.example' to 'terraform.tfvars' and update the values wi
 Run the following commands - has been tested with terraform v0.13.4
 
     terraform init
-    terraform plan
+    terraform apply
 
 ## Lambda Test Event
 
