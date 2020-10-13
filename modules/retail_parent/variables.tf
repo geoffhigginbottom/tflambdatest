@@ -7,7 +7,7 @@ variable "lambda_retail_parent_role_arn" {
 }
 
 variable "lambda_retail_child_function_arn"{
-    type = "string"
+    type = string
 }
 
 ### SFx Variables ###
