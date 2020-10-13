@@ -1,0 +1,15 @@
+### AWS Variables ###
+profile = "xxx"
+key_name = "yyy"
+
+### If region is not set (default) you are prompted to choose a region at run time.
+### Setting a region here removes the prompt - good for repetitive testing 
+#region = "2"
+
+### SFx Variables ###
+### Default values are using eu0 realm
+access_token = "xxx"
+realm = "eu0"
+metrics_url = "https://ingest.eu0.signalfx.com"
+metrics_tracing = "https://ingest.eu0.signalfx.com/v2/trace"
+apm_environment = "https://ingest.eu0.signalfx.com/v2/trace"
