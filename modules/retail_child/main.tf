@@ -5,7 +5,7 @@ resource "aws_lambda_function" "child" {
   handler       = "lambda_function.lambda_handler"
   layers        = [lookup(var.region_wrapper, var.region)]
   runtime       = "python3.8"
-  timeout       = 10
+  timeout       = 90
 
   environment {
     variables = {
