@@ -65,9 +65,9 @@ variable "apm_environment" {
 
 ### Function Names ###
 variable "child_function_name" {
-  default = "RetailChildName"
+  default = []
 }
 
 variable "parent_function_name" {
-  default = "RetailParentName"
+  default = []
 }

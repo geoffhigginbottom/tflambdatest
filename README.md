@@ -12,6 +12,8 @@ Rename 'terraform.tfvars.example' to 'terraform.tfvars' and update the values wi
 
 'SFx Variables' are used to link to your SignalFx environment for APM
 
+'Function Names' enable you to change the naming of the functions, useful for testing
+
     ### AWS Variables ###
     profile = "xxx"
     #region = "2"
@@ -22,6 +24,10 @@ Rename 'terraform.tfvars.example' to 'terraform.tfvars' and update the values wi
     metrics_url = "https://ingest.eu0.signalfx.com"
     metrics_tracing = "https://ingest.eu0.signalfx.com/v2/trace"
     apm_environment = "https://ingest.eu0.signalfx.com/v2/trace"
+
+    ### Function Names ###
+    child_function_name = "RetailChild"
+    parent_function_name = "RetailParent"
 
 ## Deployment
 Run the following commands - has been tested with terraform v0.13.4

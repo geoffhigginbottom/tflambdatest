@@ -13,3 +13,8 @@ realm = "eu0"
 metrics_url = "https://ingest.eu0.signalfx.com"
 metrics_tracing = "https://ingest.eu0.signalfx.com/v2/trace"
 apm_environment = "https://ingest.eu0.signalfx.com/v2/trace"
+
+
+### Function Names ###
+child_function_name = "RetailChild"
+parent_function_name = "RetailParent"
