@@ -1,6 +1,6 @@
 resource "aws_lambda_function" "parent" {
   filename      = "./modules/retail_parent/RetailParent.zip"
-  function_name = "RetailParent"
+  function_name = var.parent_function_name
   role          = var.lambda_retail_parent_role_arn
   handler       = "lambda_function.lambda_handler"
   layers        = [lookup(var.region_wrapper, var.region)]

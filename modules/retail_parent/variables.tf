@@ -3,7 +3,7 @@ variable "region" {}
 variable "region_wrapper" {}
 
 variable "lambda_retail_parent_role_arn" {
-    type = "string"
+    type = string
 }
 
 variable "lambda_retail_child_function_arn"{
@@ -16,3 +16,6 @@ variable "realm" {}
 variable "metrics_url" {}
 variable "metrics_tracing" {}
 variable "apm_environment" {}
+
+### Function Names ###
+variable "parent_function_name" {}

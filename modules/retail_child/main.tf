@@ -1,8 +1,8 @@
 resource "aws_lambda_function" "child" {
   filename      = "./modules/retail_child/RetailChild.zip"
-  function_name = "RetailChild"
+  function_name = var.child_function_name
   role          = var.lambda_retail_child_role_arn
-  handler       = "llambda_function.lambda_handler"
+  handler       = "lambda_function.lambda_handler"
   layers        = [lookup(var.region_wrapper, var.region)]
   runtime       = "python3.8"
   timeout       = 10
