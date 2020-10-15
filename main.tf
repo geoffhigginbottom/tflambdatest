@@ -14,6 +14,7 @@ module "retail_child" {
   source = "./modules/retail_child"
   lambda_retail_child_role_arn = module.roles.lambda_retail_child_role_arn
   child_function_name = var.child_function_name
+  retail_child_function_url = var.retail_child_function_url
 
   region = var.region
   region_wrapper = var.region_wrapper
@@ -29,6 +30,7 @@ module "retail_parent" {
   lambda_retail_parent_role_arn = module.roles.lambda_retail_parent_role_arn
   lambda_retail_child_function_arn = module.retail_child.lambda_retail_child_function_arn
   parent_function_name = var.parent_function_name
+  retail_parent_function_url = var.retail_parent_function_url
 
   region = var.region
   region_wrapper = var.region_wrapper

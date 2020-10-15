@@ -19,3 +19,6 @@ variable "apm_environment" {}
 
 ### Function Names ###
 variable "parent_function_name" {}
+
+### Function URLs ###
+variable "retail_parent_function_url" {}

@@ -65,9 +65,17 @@ variable "apm_environment" {
 
 ### Function Names ###
 variable "child_function_name" {
-  default = []
+  default = "RetailChild"
 }
 
 variable "parent_function_name" {
-  default = []
+  default = "RetailParent"
+}
+
+variable "retail_parent_function_url" {
+  default = "https://raw.githubusercontent.com/geoffhigginbottom/lambda_functions/main/RetailParentFunction-lambda_function-v1.py"
+}
+
+variable "retail_child_function_url" {
+  default = "https://raw.githubusercontent.com/geoffhigginbottom/lambda_functions/main/RetailChildFunction-lambda_function-v1.py"
 }
