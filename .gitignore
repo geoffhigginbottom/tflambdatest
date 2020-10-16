@@ -32,5 +32,5 @@ override.tf.json
 *.DS_Store
 *.ignore
 *.tfvars
-*.lambda.zip
-*.lambda_function.py
+lambda.zip
+lambda_function.py
